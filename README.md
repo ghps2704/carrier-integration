@@ -30,7 +30,7 @@ Callers only import from `src/index.ts` and see the normalized `RateQuote[]` typ
 
 ### Authentication
 
-`UpsAuthClient` implements the [UPS OAuth 2.0 client-credentials flow](https://developer.ups.com/api/reference/oauth/authorization-code):
+`UpsAuthClient` implements the [UPS OAuth 2.0 client-credentials flow](https://developer.ups.com/api/reference/oauth/client-credentials):
 
 - Tokens are cached in memory until expiry.
 - A 60-second buffer prevents using tokens at the edge of their TTL.
